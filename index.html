@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+  <html lang="en"> 
+    <head>
+      <meta charset="UTF-8">
+      <meta name="keywords" content="HTML, CSS, JavaScript, linux, Hydra3Team, Hydra Team, Hackers, github, Hydra, Eng.Psycho, .Smiley, 𝙳𝙴𝙰𝚃𝙷_𝚇𝚇, Hydra-Team">
+      <meta name="description" content="Programming, CyberSec,HTML, CSS, JavaScript, linux, Hydra3Team, Hydra Team, Hackers, github, Hydra, Eng.Psycho, .Smiley, 𝙳𝙴𝙰𝚃𝙷_𝚇𝚇, Hydra-Team">
+      <meta name="author" content="Hydra-Team, Eng.Psycho, .Smiley, 𝙳𝙴𝙰𝚃𝙷_𝚇𝚇">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Hydra-Team</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="https://i.imgur.com/cw00Yez.png" type="image/png">
+    </head>
+
+    <body>
+      <div id="loading">
+        <div id="spinner"></div>
+      </div>
+      <div id="profile">
+        <div id="profile_img" style="background: url(https://i.imgur.com/cw00Yez.png) center;"></div>
+        <div id="username"><span style="display:block;"><span id="H">H</span><span id="y">y</span><span id="d">d</span><span id="r">r</span><span id="ae">a </span> <span id="t">T</span><span id="e">E</span><span id="af">A</span><span id="m">M</span></span><a href="https://github.com/Hydra3Team">@Hydra3Team</a></div>
+        <div id="userbio" style="display: block;">Porgrammers, CyberSec Enginners.</div>
+        <div id="about">
+                  <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="https://www.tiktok.com/@.hydrateam">Tiktok</a></span>
+                  <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Mars </span>
+        </div>
+      </div>
+      <div id="display">
+        <div id="work">
+          <h1>PROJECTS : </h1>
+          <div class="projects" id="work_section">
+            <a href="https://github.com/Hydra3Team/Hydra3Team" target="_blank">
+              <section>
+                <div class="section_title">Hydra3Team</div>
+                  <div class="about_section">
+                    <span style="display:block;">About US!</span>
+                  </div>
+                  <div class="bottom_section">
+                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Shell</span>
+                    <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                    <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                  </div>
+              </section>
+            </a>
+            <a href="https://github.com/Hydra3Team/heart-drawing" target="_blank">
+              <section>
+                <div class="section_title">heart-drawing</div>
+                  <div class="about_section">
+                    <span style="display:block;">simple gift (HBD $*)</span>
+                  </div>
+                  <div class="bottom_section">
+                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                    <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                    <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                  </div>
+              </section>
+            </a>
+            <a href="https://github.com/Hydra3Team/Hydra3Team.github.io" target="_blank">
+              <section>
+                <div class="section_title">Hydra3Team.github.io</div>
+                  <div class="about_section">
+                    <span style="display:block;">OUR Page .!</span>
+                  </div>
+                  <div class="bottom_section">
+                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Html & Css & JS</span>
+                    <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                    <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                  </div>
+              </section>
+            </a>
+          </div>
+        </div>
+        <div id="footer">
+          <a href="https://github.com/Hydra3Team" target="_blank">Click Here !</a>
+        </div>
+      </div>
+      <script type="text/javascript">
+        setTimeout(function() {
+          document.getElementById("loading").classList.add("animated");
+          document.getElementById("loading").classList.add("fadeOut");
+          setTimeout(function() {
+            document.getElementById("loading").classList.remove("animated");
+            document.getElementById("loading").classList.remove("fadeOut");
+            document.getElementById("loading").style.display = "none";
+          }, 800);
+        }, 1500);
+      </script>
+      <script>
+        const magicProjectsGrid = new MagicGrid({
+          container: "#work_section",
+          animate: false,
+          gutter: 30, // default gutter size
+          static: true,
+          useMin: false,
+          maxColumns: 2,
+          useTransform: true
+        });
+
+
+        $("document").ready(() => {
+          magicProjectsGrid.listen();
+          magicForksGrid.listen();
+        });
+      </script> 
+    </body>
+  </html>
